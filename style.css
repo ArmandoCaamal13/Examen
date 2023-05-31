@@ -1,0 +1,21 @@
+*{
+    
+}
+
+.title{
+    color: black;
+    text-align: center;
+}
+
+button{
+    border: none;
+    background:black;
+    display: block;
+    color: white;
+    margin-top: 80px;
+    margin-left: 47%;
+}
+
+form{
+    text-align: center;
+}
