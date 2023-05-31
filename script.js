@@ -10,14 +10,18 @@
 // luego, llamar a la funcion mostrar lista para actualizar la 
 //lista de tareas en la vista HTML 
 //
-// Objeto ListaTareas
+// Objeto 
+
+//Definimos la constante ListaTareas para ingresar las tareas como parametros
 const ListaTareas = {
     tareas: [],
   
+    //agregarTarea sirve para agregar las tareas que vengan desde el formulario
     agregarTarea(tarea){
       this.tareas.push(tarea);
     },
     
+    //en esta parte mandaremos a llamar las funcion AgregarTareas a una lista que visualizara todas las tareas agregadas
     mostrarLista() {
       const listaTareasElement = document.getElementById("listatareas");
       listaTareasElement.innerHTML = "";
@@ -37,7 +41,8 @@ const ListaTareas = {
   
     const tareaInput = document.getElementById("tarea");
     const nuevaTarea = tareaInput.value.trim();
-  
+    
+     
     if (nuevaTarea !== "") {
       ListaTareas.agregarTarea(nuevaTarea);
       ListaTareas.mostrarLista();
